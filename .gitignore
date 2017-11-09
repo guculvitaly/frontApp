@@ -1,6 +1,4 @@
 .gitignore
 .idea
-
 app/img/favicon/
-
 node_modules/
