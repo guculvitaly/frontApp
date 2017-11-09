@@ -1,6 +1,6 @@
 .gitignore
 .idea
-app/css/
+
 app/img/favicon/
-dist/
+
 node_modules/
