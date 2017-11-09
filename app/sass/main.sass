@@ -1,0 +1,138 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+
+.hero-image
+	background-image: url("../img/header11.jpg")
+	height: 50%
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+
+
+.hero-text
+	text-align: center
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	color: white
+
+.button
+	background-color: #4CAF50
+	border: none
+	color: white
+	padding: 15px 65px
+	text-align: center
+	text-decoration: none
+	display: inline-block
+	font-size: 16px
+	margin: 4px 2px
+	-webkit-transition-duration: 0.4s
+	transition-duration: 0.4s
+	cursor: pointer
+
+.button1
+	background-color: white
+	color: black
+	border: 2px solid #4CAF50
+	&:hover
+		background-color: #4CAF50
+		color: white
+
+.s-sidebar
+	float: right
+
+.sl-item
+	padding: 10px
+
+
+
+.vertical-menu
+	//width: 300px
+	margin-top: 100px
+	position: relative
+	height: 100%
+
+.vertical-menu a
+	background-color: #eee
+	color: black
+	display: block
+	padding: 12px
+	text-decoration: none
+	text-align: center
+	-webkit-transition-duration: 0.4s
+	transition-duration: 0.4s
+
+.vertical-menu a:hover
+	background-color: #ccc
+
+.vertical-menu a.active
+	background-color: #4CAF50
+	color: white
+
+footer
+	background-color: gainsboro
+
+.f-footer a
+	display: block
+	color: black
+	text-decoration: none
+	padding: 5px
+	&:hover
+		color: #4CAF50
+
+
+
+@import "media" // Всегда в конце
